@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JellyButtonAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,84 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="JTC-Rx-5Ci">
+                                <rect key="frame" x="96" y="200" width="183" height="267"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fkf-wr-CFV">
+                                        <rect key="frame" x="0.0" y="0.0" width="183" height="93.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="vNt-wk-wea">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="93.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjh-Se-fwY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="66.5" height="93.5"/>
+                                                        <state key="normal" image="Image"/>
+                                                        <connections>
+                                                            <action selector="jellyAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="byO-vj-8EK"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqQ-V0-HNA">
+                                                        <rect key="frame" x="116.5" y="0.0" width="66.5" height="93.5"/>
+                                                        <state key="normal" image="Image"/>
+                                                        <connections>
+                                                            <action selector="jellyAnimation2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LcV-4i-Gkl"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="t8c-c5-FiF">
+                                        <rect key="frame" x="0.0" y="173.5" width="183" height="93.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="r5b-BL-XcI">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="93.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHB-sg-Llf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="66.5" height="93.5"/>
+                                                        <state key="normal" image="Image"/>
+                                                        <connections>
+                                                            <action selector="jellyAnimation3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UCl-b3-eiO"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0d1-Ud-mHp">
+                                                        <rect key="frame" x="116.5" y="0.0" width="66.5" height="93.5"/>
+                                                        <state key="normal" image="Image"/>
+                                                        <connections>
+                                                            <action selector="jellyAnimation4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gYc-YJ-K1X"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JTC-Rx-5Ci" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Caw-cp-aLm"/>
+                            <constraint firstItem="JTC-Rx-5Ci" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="YmI-zp-dBS"/>
+                            <constraint firstAttribute="bottom" secondItem="JTC-Rx-5Ci" secondAttribute="bottom" constant="200" id="ZBj-He-1rW"/>
+                            <constraint firstItem="JTC-Rx-5Ci" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZtR-J4-2pe"/>
+                            <constraint firstItem="JTC-Rx-5Ci" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="200" id="g98-l9-uOU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JTC-Rx-5Ci" secondAttribute="trailing" constant="80" id="gM9-D0-SQk"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="jellyButton" destination="pjh-Se-fwY" id="HHv-Op-C5d"/>
+                        <outlet property="jellyButton2" destination="fqQ-V0-HNA" id="OQu-6j-v6v"/>
+                        <outlet property="jellyButton3" destination="DHB-sg-Llf" id="Lvu-7a-iia"/>
+                        <outlet property="jellyButton4" destination="0d1-Ud-mHp" id="nTC-NY-OWB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="35" height="39"/>
+    </resources>
 </document>

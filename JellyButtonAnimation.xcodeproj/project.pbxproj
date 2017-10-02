@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C33E145E1F8291DE00C1B4DC /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33E145D1F8291DE00C1B4DC /* test.swift */; };
 		C3642A321F79A2370070BE3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3642A311F79A2370070BE3B /* AppDelegate.swift */; };
 		C3642A341F79A2370070BE3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3642A331F79A2370070BE3B /* ViewController.swift */; };
 		C3642A371F79A2370070BE3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3642A351F79A2370070BE3B /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C33E145D1F8291DE00C1B4DC /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		C3642A2E1F79A2370070BE3B /* JellyButtonAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JellyButtonAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3642A311F79A2370070BE3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3642A331F79A2370070BE3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				C3642A311F79A2370070BE3B /* AppDelegate.swift */,
 				C3642A331F79A2370070BE3B /* ViewController.swift */,
+				C33E145D1F8291DE00C1B4DC /* test.swift */,
 				C3642A351F79A2370070BE3B /* Main.storyboard */,
 				C3642A381F79A2370070BE3B /* Assets.xcassets */,
 				C3642A3A1F79A2370070BE3B /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3642A341F79A2370070BE3B /* ViewController.swift in Sources */,
+				C33E145E1F8291DE00C1B4DC /* test.swift in Sources */,
 				C3642A321F79A2370070BE3B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +306,7 @@
 				C3642A421F79A2370070BE3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
